@@ -1,0 +1,1 @@
+function e(e){if(!e)return null;let t=e.trim().toLowerCase();return t===`ios`?`ios`:t===`android`||t===`material`?`material`:null}function t(e){return/iPhone|iPad|iPod/i.test(e)?`ios`:/Android/i.test(e)?`material`:`ios`}function n(n){return e(n.get(`platform`))||(typeof navigator>`u`?`ios`:t(navigator.userAgent))}export{n as t};
